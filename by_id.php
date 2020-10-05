@@ -4,12 +4,12 @@
     <div id="by-id-login" class="user-login text-center py-2">
       <div>Please Log In!</div>
       <div class="pt-2 pb-1">Log In With Google</div>
-      <button id="authorize-button2" type="button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
+      <button id="by-id-login-button" type="button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
     </div>
     <div id="by-id-logout" class="user-logout text-center py-2">
       <div>Logged In!</div>
       <div class="pt-2 pb-1">Log Out?</div>
-      <button id="signout-button2" type="button" class="btn bg-red text-white btn-font border border-dark">LOG OUT</button>
+      <button id="by-id-logout-button" type="button" class="btn bg-red text-white btn-font border border-dark">LOG OUT</button>
     </div>
   </div>
   <div id="content">

@@ -5,8 +5,12 @@ const DISCOVERY_DOCS = [
 ];
 const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
-const authorizeButton = document.getElementById('authorize-button');
-const signoutButton = document.getElementById('signout-button');
+const byIdLogin = document.getElementById('by-id-login');
+const byIdLoginButton = document.getElementById('by-id-login-button');
+
+const byIdLogout = document.getElementById('by-id-logout');
+const byIdLogoutButton = document.getElementById('by-id-logout-button');
+
 const content = document.getElementById('content');
 const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
@@ -43,23 +47,23 @@ function initClient() {
       gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
       // Handle initial sign in state
       updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-      authorizeButton.onclick = handleAuthClick;
-      signoutButton.onclick = handleSignoutClick;
+      byIdLoginButton.onclick = handleAuthClick;
+      byIdLogoutButton.onclick = handleSignoutClick;
     });
 }
 
 // Update UI sign in state changes
 function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
-    authorizeButton.style.display = 'none';
-    signoutButton.style.display = 'block';
+    byIdLogin.style.display = 'none';
+    byIdLogout.style.display = 'block';
     content.style.display = 'block';
     videoContainer.style.display = 'block';
     // CHANGES! getChannel(defaultChannel);
     getChannel(defaultChannelID);
   } else {
-    authorizeButton.style.display = 'block';
-    signoutButton.style.display = 'none';
+    byIdLogin.style.display = 'block';
+    byIdLogout.style.display = 'none';
     content.style.display = 'none';
     videoContainer.style.display = 'none';
   }
