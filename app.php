@@ -23,9 +23,11 @@
   <!-- My Scripts and Google YouTube API -->  
   <script src="<?php echo $dirYT;?>script/header.js"></script>
   <script src="<?php echo $dirYT;?>script/navbar.js"></script>
-  <script async defer src="<?php echo $dirYT;?>script/my_credentials.js"></script>
-  <script async defer src="<?php echo $dirYT;?>script/main_script.js"></script>
-<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" 
+  <script src="<?php echo $dirYT;?>script/my_credentials.js"></script>
+  <script src="<?php echo $dirYT;?>script/main_script.js"></script>
+  <script async defer src="https://apis.google.com/js/api.js" 
+    onload="this.onload=function(){};handleClientLoad()"
     onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 </html>
