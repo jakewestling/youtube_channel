@@ -135,11 +135,11 @@ function getChannel(channel) {
             </tr>
             <tr>
               <td>Views</td>
-              <td>${numberWithCommas(channel.statistics.ViewCount)}</td>
+              <td>${numberWithCommas(channel.statistics.viewCount)}</td>
             </tr>
             <tr>
               <td>Videos</td>
-              <td>${numberWithCommas(channel.statistics.VideoCount)}</td>
+              <td>${numberWithCommas(channel.statistics.videoCount)}</td>
             </tr>
           </tbody>
         </table>
