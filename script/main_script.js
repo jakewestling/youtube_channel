@@ -1,5 +1,5 @@
 // Options
-console.log('main script loaded);
+console.log('main script loaded');
 const DISCOVERY_DOCS = [
   'https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'
 ];
