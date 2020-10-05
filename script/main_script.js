@@ -1,5 +1,4 @@
 // Options
-console.log('main script loaded');
 const DISCOVERY_DOCS = [
   'https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'
 ];
@@ -7,8 +6,8 @@ const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
 const byIdLogin = document.getElementById('by-id-login');
 const byIdLoginButton = document.getElementById('by-id-login-button');
-const byIdLogout = document.getElementById('by-id-logout');
-const byIdLogoutButton = document.getElementById('by-id-logout-button');
+// const byIdLogout = document.getElementById('by-id-logout');
+// const byIdLogoutButton = document.getElementById('by-id-logout-button');
 
 const sideBarLogin = document.getElementById('sidebar-login');
 const sideBarLoginButton = document.getElementById('sidebar-login-button');
@@ -35,13 +34,11 @@ channelForm.addEventListener('submit', e => {
 
 // Load auth2 library
 function handleClientLoad() {
-  console.log('handleClientLoad function fired');
   gapi.load('client:auth2', initClient);
 }
 
 // Init API client library and set up sign in listeners
 function initClient() {
-  console.log('initClient function fired');
   gapi.client
     .init({
       discoveryDocs: DISCOVERY_DOCS,
@@ -55,7 +52,7 @@ function initClient() {
       updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
       byIdLoginButton.onclick = handleAuthClick;
       sideBarLoginButton.onclick = handleAuthClick;
-      byIdLogoutButton.onclick = handleSignoutClick;
+      // byIdLogoutButton.onclick = handleSignoutClick;
       sideBarLogoutButton.onclick = handleSignoutClick;
     });
 }
@@ -64,7 +61,7 @@ function initClient() {
 function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     byIdLogin.style.display = 'none';
-    byIdLogout.style.display = 'block';
+    // byIdLogout.style.display = 'block';
     sideBarLogin.style.display = 'none';
     sideBarLogout.style.display = 'block';
     content.style.display = 'block';
@@ -73,7 +70,7 @@ function updateSigninStatus(isSignedIn) {
     getChannel(defaultChannelID);
   } else {
     byIdLogin.style.display = 'block';
-    byIdLogout.style.display = 'none';
+    // byIdLogout.style.display = 'none';
     sideBarLogin.style.display = 'block';
     sideBarLogout.style.display = 'none';
     content.style.display = 'none';
@@ -83,13 +80,11 @@ function updateSigninStatus(isSignedIn) {
 
 // Handle login
 function handleAuthClick() {
-  console.log('handleAuthClick function fired');
   gapi.auth2.getAuthInstance().signIn();
 }
 
 // Handle logout
 function handleSignoutClick() {
-  console.log('handleSignoutClick function fired');
   gapi.auth2.getAuthInstance().signOut();
 }
 
