@@ -1,0 +1,58 @@
+:root {
+  --text-red: red;
+  --bg-light-gray: rgb(249,249,249);
+  --bg-silver: #c0c0c0;
+  --bg-red: red;
+  --bg-light-gray2: #d8dbde;
+}
+.hr {
+  color: black;
+  background-color: var(--bg-silver);
+}
+.text-red {
+  color: var(--text-red);
+}
+.bg-light-gray {
+  background-color: var(--bg-light-gray);
+}
+.bg-light-gray2 {
+  background-color: var(--bg-light-gray2);
+}
+.bg-silver {
+  background-color: var(--bg-silver);
+}
+.bg-red {
+  background-color: var(--bg-red);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Screen less than (xs-default) ALL PHONES PORTRAIT*/
+@media screen and (min-width: 0px) {
+  /*Default Bootstrap*/
+}
+/* Screen greater than (sm) SMALL TABLETS*/
+@media screen and (min-width: 576px) {
+
+}
+/* Screen greater than (md) IPAD or TABLETS*/
+@media screen and (min-width: 768px) {
+  
+}
+
+/* Screen greater than (lg) LAPTOPS or DESKTOPS*/
+@media screen and (min-width: 992px) {
+  
+}
+
+/* Screen greater than (xl) 1200px*/
+@media screen and (min-width: 1200px) {
+
+}

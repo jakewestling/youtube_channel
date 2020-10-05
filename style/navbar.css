@@ -1,0 +1,43 @@
+.nav-a {
+  font-weight: 600;
+}
+.nav-a-active {
+  color: var(--text-red);
+  font-weight: 700;
+}
+.nav-a-active:hover {
+  color: var(--text-red);
+}
+
+/* Display set to Home by Default */
+#home {
+  display: block;
+}
+#search-channels, #compare, #by-id, #guide{
+  display: none;
+}
+
+/* Screen less than (xs-default) ALL PHONES PORTRAIT*/
+@media screen and (min-width: 0px) {
+  /*Default Bootstrap*/
+}
+/* Screen greater than (sm) SMALL TABLETS*/
+@media screen and (min-width: 576px) {
+  .main-nav {
+    font-size: large;
+  }
+}
+/* Screen greater than (md) IPAD or TABLETS*/
+@media screen and (min-width: 768px) {
+  
+}
+
+/* Screen greater than (lg) LAPTOPS or DESKTOPS*/
+@media screen and (min-width: 992px) {
+  
+}
+
+/* Screen greater than (xl) 1200px*/
+@media screen and (min-width: 1200px) {
+
+}

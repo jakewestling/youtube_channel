@@ -1,0 +1,9 @@
+.question-help {
+  display: inline-block;  
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+#content, #by-id-login, #by-id-logout {
+  display: none;
+}
