@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style/by_id.css"> 
   <script src="https://kit.fontawesome.com/6b0b6e5fa1.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-light-gray">
   <div class="container-fluid">
     <header class="row py-2 bg-light-gray main-header">
       <div class="col-10 px-2">
