@@ -119,7 +119,7 @@ function getChannel(channel) {
       const channel = response.result.items[0];
 
       const output = `        
-        <table class="table">
+        <table class="table table-responsive data-table">
           <tbody>
             <tr>
               <td>Title</td>
@@ -145,26 +145,6 @@ function getChannel(channel) {
         </table>
         <p>${channel.snippet.description}</p>
         <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
-
-
-
-        <ul class="collection">
-          <li class="collection-item">Title: ${channel.snippet.title}</li>
-          <li class="collection-item">ID: ${channel.id}</li>
-          <li class="collection-item">Subscribers: ${numberWithCommas(
-        channel.statistics.subscriberCount
-      )}</li>
-          <li class="collection-item">Views: ${numberWithCommas(
-        channel.statistics.viewCount
-      )}</li>
-          <li class="collection-item">Videos: ${numberWithCommas(
-        channel.statistics.videoCount
-      )}</li>
-        </ul>
-        <p>${channel.snippet.description}</p>
-        <hr>
-        <a class="btn grey darken-2" target="_blank" href="https://youtube.com/${channel.snippet.customUrl
-        }">Visit Channel</a>
       `;
       showChannelData(output);
 
