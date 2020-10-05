@@ -31,11 +31,13 @@ channelForm.addEventListener('submit', e => {
 
 // Load auth2 library
 function handleClientLoad() {
+  console.log('handleClientLoad function fired');
   gapi.load('client:auth2', initClient);
 }
 
 // Init API client library and set up sign in listeners
 function initClient() {
+  console.log('initClient function fired');
   gapi.client
     .init({
       discoveryDocs: DISCOVERY_DOCS,
@@ -71,11 +73,13 @@ function updateSigninStatus(isSignedIn) {
 
 // Handle login
 function handleAuthClick() {
+  console.log('handleAuthClick function fired');
   gapi.auth2.getAuthInstance().signIn();
 }
 
 // Handle logout
 function handleSignoutClick() {
+  console.log('handleSignoutClick function fired');
   gapi.auth2.getAuthInstance().signOut();
 }
 

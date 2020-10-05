@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>   
-  <title>YouTube Channel Info</title>
-</head>
 <?php
     require 'header.php';
     require 'navbar.php';
   ?> 
-<body class="bg-light-gray">  
+  
   <div class="container-fluid">         
     <?php
       require 'home.php';
@@ -26,8 +23,9 @@
   <!-- My Scripts and Google YouTube API -->  
   <script src="<?php echo $dirYT;?>script/header.js"></script>
   <script src="<?php echo $dirYT;?>script/navbar.js"></script>
-  <script src="<?php echo $dirYT;?>script/my_credentials.js"></script>
-  <script src="<?php echo $dirYT;?>script/main_script.js"></script>
-  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+  <script async defer src="<?php echo $dirYT;?>script/my_credentials.js"></script>
+  <script async defer src="<?php echo $dirYT;?>script/main_script.js"></script>
+<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" 
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
 </body>
 </html>
