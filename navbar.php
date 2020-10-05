@@ -1,4 +1,4 @@
-    <hr class="hr m-0 p-0">
+  <hr class="hr m-0 p-0">
   <div class="container-fluid">  
     <nav class="row bg-light-gray py-1 main-nav">
       <div class="col-12 px-0">        
@@ -9,4 +9,5 @@
       </div>
     </nav>
   </div>
-  <hr class="hr m-0 p-0"> 
+  <hr class="hr m-0 p-0">
+  <div class="mb-3"></div> 
