@@ -118,8 +118,7 @@ function getChannel(channel) {
       console.log(response);
       const channel = response.result.items[0];
 
-      const output = `
-        
+      const output = `        
         <table class="table">
           <tbody>
             <tr>
@@ -132,24 +131,20 @@ function getChannel(channel) {
             </tr>
             <tr>
               <td>Subscribers</td>
-              <td>${numbersWithCommas(channel.statistics.subscriberCount)}</td>
+              <td>${numberWithCommas(channel.statistics.subscriberCount)}</td>
             </tr>
             <tr>
               <td>Views</td>
-              <td>${numbersWithCommas(channel.statistics.ViewCount)}</td>
+              <td>${numberWithCommas(channel.statistics.ViewCount)}</td>
             </tr>
             <tr>
               <td>Videos</td>
-              <td>${numbersWithCommas(channel.statistics.VideoCount)}</td>
+              <td>${numberWithCommas(channel.statistics.VideoCount)}</td>
             </tr>
           </tbody>
         </table>
         <p>${channel.snippet.description}</p>
         <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
-
-
-
-
 
 
 
@@ -178,7 +173,6 @@ function getChannel(channel) {
       <img src="${channel.snippet.thumbnails.high.url}" class="mx-auto d-block img-fluid channel-thumbnail-pic" alt="${channel.snippet.title} Thumbnail">
       `;
       showChannelThumbnail(outputThumbnail);
-
 
       const playlistId = channel.contentDetails.relatedPlaylists.uploads;
       requestVideoPlaylist(playlistId);
