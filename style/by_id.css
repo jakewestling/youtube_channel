@@ -5,5 +5,5 @@
 }
 
 #content, #by-id-login, #by-id-logout {
-  display: none;
+  display: block;
 }
