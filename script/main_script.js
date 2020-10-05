@@ -7,9 +7,13 @@ const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
 const byIdLogin = document.getElementById('by-id-login');
 const byIdLoginButton = document.getElementById('by-id-login-button');
-
 const byIdLogout = document.getElementById('by-id-logout');
 const byIdLogoutButton = document.getElementById('by-id-logout-button');
+
+const sideBarLogin = document.getElementById('sidebar-login');
+const sideBarLoginButton = document.getElementById('sidebar-login-button');
+const sideBarLogout = document.getElementById('sidebar-logout');
+const sideBarLogoutButton = document.getElementById('sidebar-logout-button');
 
 const content = document.getElementById('content');
 const channelForm = document.getElementById('channel-form');
@@ -50,7 +54,9 @@ function initClient() {
       // Handle initial sign in state
       updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
       byIdLoginButton.onclick = handleAuthClick;
+      sideBarLoginButton.onclick = handleAuthClick;
       byIdLogoutButton.onclick = handleSignoutClick;
+      sideBarLogoutButton.onclick = handleSignoutClick;
     });
 }
 
@@ -59,6 +65,8 @@ function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     byIdLogin.style.display = 'none';
     byIdLogout.style.display = 'block';
+    sideBarLogin.style.display = 'none';
+    sideBarLogout.style.display = 'block';
     content.style.display = 'block';
     videoContainer.style.display = 'block';
     // CHANGES! getChannel(defaultChannel);
@@ -66,6 +74,8 @@ function updateSigninStatus(isSignedIn) {
   } else {
     byIdLogin.style.display = 'block';
     byIdLogout.style.display = 'none';
+    sideBarLogin.style.display = 'block';
+    sideBarLogout.style.display = 'none';
     content.style.display = 'none';
     videoContainer.style.display = 'none';
   }
@@ -88,46 +98,6 @@ function showChannelData(data) {
   const channelData = document.getElementById('channel-data');
   channelData.innerHTML = data;
 }
-
-// // CHANGES! Get channel from API
-// function getChannel(channel) {
-//   gapi.client.youtube.channels
-//     .list({
-//       part: 'snippet,contentDetails,statistics',
-//       forUsername: channel
-//     })
-//     .then(response => {
-//       console.log(response);
-//       const channel = response.result.items[0];
-
-//       const output = `
-//         <ul class="collection">
-//           <li class="collection-item">Title: ${channel.snippet.title}</li>
-//           <li class="collection-item">ID: ${channel.id}</li>
-//           <li class="collection-item">Subscribers: ${numberWithCommas(
-//         channel.statistics.subscriberCount
-//       )}</li>
-//           <li class="collection-item">Views: ${numberWithCommas(
-//         channel.statistics.viewCount
-//       )}</li>
-//           <li class="collection-item">Videos: ${numberWithCommas(
-//         channel.statistics.videoCount
-//       )}</li>
-//         </ul>
-//         <p>${channel.snippet.description}</p>
-//         <hr>
-//         <a class="btn grey darken-2" target="_blank" href="https://youtube.com/${channel.snippet.customUrl
-//         }">Visit Channel</a>
-//       `;
-//       showChannelData(output);
-
-//       const playlistId = channel.contentDetails.relatedPlaylists.uploads;
-//       requestVideoPlaylist(playlistId);
-//     })
-//     .catch(err => alert('No Channel By That Name'));
-// }
-
-
 
 // Get channel from API
 function getChannel(channel) {
