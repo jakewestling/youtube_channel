@@ -88,6 +88,15 @@ function handleSignoutClick() {
   gapi.auth2.getAuthInstance().signOut();
 }
 
+
+// Display channel thumbnail
+function showChannelThumbnail(thumbnailData) {
+  const channelThumbnail = document.getElementById('channel-thumbnail');
+  channelThumbnail.innerHTML = thumbnailData;
+}
+
+
+
 // Display channel data
 function showChannelData(data) {
   const channelData = document.getElementById('channel-data');
@@ -129,6 +138,13 @@ function getChannel(channel) {
         }">Visit Channel</a>
       `;
       showChannelData(output);
+
+
+      const outputThumbnail = `
+      <img src="${channel.snippet.thumbnails.high.url}">
+      `;
+      showChannelThumbnail(outputThumbnail);
+
 
       const playlistId = channel.contentDetails.relatedPlaylists.uploads;
       requestVideoPlaylist(playlistId);
