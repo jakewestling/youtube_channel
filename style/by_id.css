@@ -7,3 +7,7 @@
 #content, #by-id-login, #by-id-logout {
   display: none;
 }
+
+.channel-thumbnail-pic {
+  width: 400px;
+}

@@ -141,7 +141,7 @@ function getChannel(channel) {
 
 
       const outputThumbnail = `
-      <img src="${channel.snippet.thumbnails.high.url}">
+      <img src="${channel.snippet.thumbnails.high.url}" class="mx-auto d-block img-fluid channel-thumbnail-pic" alt="${channel.snippet.title} Thumbnail">
       `;
       showChannelThumbnail(outputThumbnail);
 
