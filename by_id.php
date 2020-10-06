@@ -22,6 +22,6 @@
       </form>
     </div>
     <div id="channel-thumbnail" class="col-12 mt-3"></div>
-    <div id="channel-data d-block mx-auto" class="col-12 mt-3"></div>
-    <div id="video-container d-block mx-auto" class="col-12 mt-3"></div>
+    <div id="channel-data" class="col-12 mt-3"></div>
+    <div id="video-container" class="col-12 mt-3"></div>
   </div>
