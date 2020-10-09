@@ -50,7 +50,7 @@ function searchChannel(search) {
         })
         searchResults.innerHTML = channelOutput;
       } else {
-        searchResults.innerHTML = 'No results found. Try Again.'
+        searchResults.innerHTML = '<div>No results found. Try Again.</div>';
       }
     })
 }
