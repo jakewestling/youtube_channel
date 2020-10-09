@@ -6,9 +6,6 @@ const SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
 
 const byIdLogin = document.getElementById('by-id-login');
 const byIdLoginButton = document.getElementById('by-id-login-button');
-// const byIdLogout = document.getElementById('by-id-logout');
-// const byIdLogoutButton = document.getElementById('by-id-logout-button');
-
 const sideBarLogin = document.getElementById('sidebar-login');
 const sideBarLoginButton = document.getElementById('sidebar-login-button');
 const sideBarLogout = document.getElementById('sidebar-logout');
@@ -19,16 +16,13 @@ const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
-// CHANGES! const defaultChannel = 'techguyweb';
 // const defaultChannelID = 'UC29ju8bIPH5as8OGnQzwJyA'; (Traversy)
 const defaultChannelID = 'UClePynY267S97vwsxfbF5hg'; //EngineersEscape
 
 // Form submit and change channel
 channelForm.addEventListener('submit', e => {
   e.preventDefault();
-
   const channel = channelInput.value;
-
   getChannel(channel);
 });
 
@@ -66,7 +60,6 @@ function updateSigninStatus(isSignedIn) {
     sideBarLogout.style.display = 'block';
     content.style.display = 'block';
     videoContainer.style.display = 'block';
-    // CHANGES! getChannel(defaultChannel);
     getChannel(defaultChannelID);
   } else {
     byIdLogin.style.display = 'block';
@@ -88,13 +81,11 @@ function handleSignoutClick() {
   gapi.auth2.getAuthInstance().signOut();
 }
 
-
 // Display channel thumbnail
 function showChannelThumbnail(thumbnailData) {
   const channelThumbnail = document.getElementById('channel-thumbnail');
   channelThumbnail.innerHTML = thumbnailData;
 }
-
 
 // Display channel data
 function showChannelData(data) {

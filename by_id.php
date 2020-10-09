@@ -6,17 +6,12 @@
       <div class="pt-2 pb-1">Log In With Google</div>
       <button id="by-id-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
     </div>
-    <!-- <div id="by-id-logout" class="user-logout text-center py-2">
-      <div>Logged In!</div>
-      <div class="pt-2 pb-1">Log Out?</div>
-      <button id="by-id-logout-button" class="btn bg-red text-white btn-font border border-dark">LOG OUT</button>
-    </div> -->
   </div>
   <div id="content">
     <div class="col-12 d-block text-center">
       <form id="channel-form" class="text-center">
         <div class="input-field">
-          <input class="mr-2" type="text" placeholder="Enter Channel ID..." id="channel-input"><span class="question-help" onclick=""><i class="fa-lg fas fa-question-circle"></i></span><br>
+          <input class="mr-2 form-control" type="text" placeholder="Enter Channel ID..." id="channel-input"><span class="question-help" onclick=""><i class="fa-lg fas fa-question-circle"></i></span><br>
           <input type="submit" value="Get Channel Info!" class="btn bg-red text-white btn-font border border-dark mt-1 px-4">
         </div>
       </form>
