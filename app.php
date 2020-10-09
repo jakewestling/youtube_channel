@@ -5,7 +5,7 @@
     require 'navbar.php';
   ?> 
   
-  <div class="container-fluid">         
+  <div class="container-fluid body-width">         
     <?php
       require 'home.php';
       require 'search_channels.php';
