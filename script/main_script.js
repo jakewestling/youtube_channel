@@ -96,7 +96,6 @@ function showChannelThumbnail(thumbnailData) {
 }
 
 
-
 // Display channel data
 function showChannelData(data) {
   const channelData = document.getElementById('channel-data');
@@ -148,12 +147,11 @@ function getChannel(channel) {
         </div>
       </div>
         <div class="mx-auto text-center">${channel.snippet.description}</div>
-        <div class="text-center">
+        <div class="mt-3 text-center">
           <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
         </div>
       `;
       showChannelData(output);
-
 
       const outputThumbnail = `
       <img src="${channel.snippet.thumbnails.high.url}" class="mx-auto d-block img-fluid channel-thumbnail-pic" alt="${channel.snippet.title} Thumbnail">
@@ -188,15 +186,13 @@ function requestVideoPlaylist(playlistId) {
     console.log(response);
     const playListItems = response.result.items;
     if (playListItems) {
-      let output = '<br><h4 class="center-align">Latest Videos</h4>';
-
+      let output = '<h4 class="text-center">Latest Videos</h4>';
       // Loop through videos and append output
       playListItems.forEach(item => {
         const videoId = item.snippet.resourceId.videoId;
-
         output += `
-          <div class="col s3">
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="col-12">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         `;
       });
