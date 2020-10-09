@@ -1,4 +1,5 @@
 const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
 const searchResults = document.getElementById('search-results');
 const searchLogin = document.getElementById('search-login');
 const searchLoginButton = document.getElementById('search-login-button');
@@ -8,7 +9,7 @@ const searchContent = document.getElementById('search-content');
 // Submit Channel Search Form
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
-  const search = searchForm.value;
+  const search = searchInput.value;
   searchChannel(search);
 });
 

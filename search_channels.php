@@ -12,8 +12,8 @@
     <div class="col-12 d-block text-center">
       <form id="search-form" class="text-center">
         <div class="input-field">
-          <input class="mr-2" type="text" placeholder="Enter Channel ID..." id="channel-input"><span class="question-help" onclick=""><i class="fa-lg fas fa-question-circle"></i></span><br>
-          <input type="submit" value="Get Channel Info!" class="btn bg-red text-white btn-font border border-dark mt-1 px-4">
+          <input class="mr-2" type="text" placeholder="Search for channels..." id="search-input"><span class="question-help" onclick=""><i class="fa-lg fas fa-question-circle"></i></span><br>
+          <input type="submit" value="Search" class="btn bg-red text-white btn-font border border-dark mt-1 px-4">
         </div>
       </form>
     </div>
