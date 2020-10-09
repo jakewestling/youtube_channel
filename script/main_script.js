@@ -118,34 +118,36 @@ function getChannel(channel) {
       const channel = response.result.items[0];
 
       const output = `
+      <h4 class="text-center">Data</h4>
       <div class="row justify-content-center">
         <div class="col-auto">        
-        <table class="table table-responsive data-table">
-          <tbody>
-            <tr>
-              <td>Title</td>
-              <td>${channel.snippet.title}</td>
-            </tr>
-            <tr>
-              <td>ID</td>
-              <td>${channel.id}</td>
-            </tr>
-            <tr>
-              <td>Subscribers</td>
-              <td>${numberWithCommas(channel.statistics.subscriberCount)}</td>
-            </tr>
-            <tr>
-              <td>Views</td>
-              <td>${numberWithCommas(channel.statistics.viewCount)}</td>
-            </tr>
-            <tr>
-              <td>Videos</td>
-              <td>${numberWithCommas(channel.statistics.videoCount)}</td>
-            </tr>
-          </tbody>
-        </table>
+          <table class="table table-responsive data-table">
+            <tbody>
+              <tr>
+                <td>Title</td>
+                <td>${channel.snippet.title}</td>
+              </tr>
+              <tr>
+                <td>ID</td>
+                <td>${channel.id}</td>
+              </tr>
+              <tr>
+                <td>Subscribers</td>
+                <td>${numberWithCommas(channel.statistics.subscriberCount)}</td>
+              </tr>
+              <tr>
+                <td>Views</td>
+                <td>${numberWithCommas(channel.statistics.viewCount)}</td>
+              </tr>
+              <tr>
+                <td>Videos</td>
+                <td>${numberWithCommas(channel.statistics.videoCount)}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+      <h4 class="text-center">Description</h4>
         <div class="mx-auto text-center">${channel.snippet.description}</div>
         <div class="mt-3 text-center">
           <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
@@ -164,10 +166,6 @@ function getChannel(channel) {
     .catch(err => alert('No Channel By That ID'));
 }
 
-
-
-
-
 // Add commas to number
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -177,7 +175,7 @@ function requestVideoPlaylist(playlistId) {
   const requestOptions = {
     playlistId: playlistId,
     part: 'snippet',
-    maxResults: 10
+    maxResults: 12
   };
 
   const request = gapi.client.youtube.playlistItems.list(requestOptions);
@@ -192,7 +190,7 @@ function requestVideoPlaylist(playlistId) {
         const videoId = item.snippet.resourceId.videoId;
         output += `
           <div class="col-12 mb-1">
-            <div class="video-container">
+            <div class="video-container px-0">
               <iframe class="video" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
