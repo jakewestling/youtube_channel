@@ -29,7 +29,7 @@ function searchChannel(search) {
     .then(response => {
       console.log(response);
       const channelItems = response.result.items;
-      if (channelItems) {
+      if (channelItems.length) {
         //Show them
         let channelOutput = '<h4 class="text-center">Results</h4>';
         channelItems.forEach(item => {
