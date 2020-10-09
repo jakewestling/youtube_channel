@@ -16,6 +16,12 @@
   font-size: 12px;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
 /* Screen less than (xs-default) ALL PHONES PORTRAIT*/
 @media screen and (min-width: 0px) {
   /*Default Bootstrap*/

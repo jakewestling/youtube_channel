@@ -192,7 +192,9 @@ function requestVideoPlaylist(playlistId) {
         const videoId = item.snippet.resourceId.videoId;
         output += `
           <div class="col-12">
-            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
         `;
       });
