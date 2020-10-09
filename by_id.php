@@ -1,7 +1,7 @@
 <div class="row bg-light-gray" id="by-id">
   <div class="col-12">
   <!-- Log In Button -->
-    <div id="by-id-login" class="user-login text-center py-2">
+    <div id="by-id-login" class="user-login text-center">
       <div>Please log in with Google to use this feature!</div>
       <div class="pt-2 pb-1">Log In With Google</div>
       <button id="by-id-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>

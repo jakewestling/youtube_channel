@@ -1,7 +1,7 @@
 <div class="row" id="search-channels">
   <div class="col-12">  
     <!-- Log Out Log In Buttons -->
-    <div id="search-login" class="user-login text-center py-2">
+    <div id="search-login" class="user-login text-center">
       <div>Please log in with Google to use this feature!</div>
       <div class="pt-2 pb-1">Log In With Google</div>
       <button id="search-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
