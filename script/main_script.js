@@ -45,8 +45,8 @@ function initClient() {
       // Handle initial sign in state
       updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
       byIdLoginButton.onclick = handleAuthClick;
+      searchLoginButton.onclick = handleAuthClick;
       sideBarLoginButton.onclick = handleAuthClick;
-      // byIdLogoutButton.onclick = handleSignoutClick;
       sideBarLogoutButton.onclick = handleSignoutClick;
     });
 }
