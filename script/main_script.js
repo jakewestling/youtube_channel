@@ -55,18 +55,20 @@ function initClient() {
 function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     byIdLogin.style.display = 'none';
-    // byIdLogout.style.display = 'block';
+    searchLogin.style.display = 'none';
     sideBarLogin.style.display = 'none';
     sideBarLogout.style.display = 'block';
     content.style.display = 'block';
+    searchContent.style.display = 'block';
     videoContainer.style.display = 'block';
     getChannel(defaultChannelID);
   } else {
     byIdLogin.style.display = 'block';
-    // byIdLogout.style.display = 'none';
+    searchLogin.style.display = 'block';
     sideBarLogin.style.display = 'block';
     sideBarLogout.style.display = 'none';
     content.style.display = 'none';
+    searchContent.style.display = 'none';
     videoContainer.style.display = 'none';
   }
 }

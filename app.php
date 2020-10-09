@@ -24,6 +24,7 @@
   <script src="<?php echo $dirYT;?>script/header.js"></script>
   <script src="<?php echo $dirYT;?>script/navbar.js"></script>
   <script src="<?php echo $dirYT;?>script/my_credentials.js"></script>
+  <script src="<?php echo $dirYT;?>script/search_channels.js"></script>
   <script src="<?php echo $dirYT;?>script/main_script.js"></script>
   <script async defer src="https://apis.google.com/js/api.js" 
     onload="this.onload=function(){};handleClientLoad()"

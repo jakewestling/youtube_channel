@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 
-#content, #by-id-login, #by-id-logout {
+#content, #by-id-login {
   display: none;
 }
 

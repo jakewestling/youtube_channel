@@ -1,0 +1,7 @@
+#search-content, search-login {
+  display: none;
+}
+
+.search-thumbnails {
+  max-width: 150px;
+}
