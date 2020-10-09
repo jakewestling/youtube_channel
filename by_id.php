@@ -7,7 +7,7 @@
       <button id="by-id-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
     </div>
   </div>
-  <div id="content">
+  <div id="content" class="mt-1">
     <div class="col-12 d-block text-center">
       <form id="channel-form" class="text-center">
         <div class="input-field">

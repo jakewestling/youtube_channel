@@ -7,7 +7,7 @@
       <button id="search-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
     </div>
   </div>
-  <div id="search-content">
+  <div id="search-content" class="mt-1">
     <!-- Form -->
     <div class="col-12 d-block text-center">
       <form id="search-form" class="text-center">
