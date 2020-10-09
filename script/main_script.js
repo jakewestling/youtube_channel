@@ -119,7 +119,8 @@ function getChannel(channel) {
       const channel = response.result.items[0];
 
       const output = `
-        <div class="mx-auto">        
+      <div class="row justify-content-center">
+        <div class="col-auto">        
         <table class="table table-responsive data-table">
           <tbody>
             <tr>
@@ -145,6 +146,7 @@ function getChannel(channel) {
           </tbody>
         </table>
         </div>
+      </div>
         <div class="mx-auto text-center">${channel.snippet.description}</div>
         <div class="text-center">
           <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
