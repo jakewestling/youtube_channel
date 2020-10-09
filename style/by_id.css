@@ -31,7 +31,7 @@
 }
 
 #channel-input {
-  width: 200px;
+  width: 250px;
 }
 
 /* Screen less than (xs-default) ALL PHONES PORTRAIT*/
@@ -44,7 +44,7 @@
     font-size: 16px;
   }
   #channel-input {
-    width: 350px;
+    width: 300px;
   }
 }
 /* Screen greater than (md) IPAD or TABLETS*/
