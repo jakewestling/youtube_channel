@@ -66,7 +66,7 @@ function deactivateListener() {
   searchResults.removeEventListener('click', getClickedID);
 }
 
-
+let clickedId;
 function getClickedID(e) {
   //select the search-result that was clicked
   let searchResultParent;
@@ -79,11 +79,11 @@ function getClickedID(e) {
   } else if(e.target.parentElement.parentElement.parentElement.classList.contains('search-result')){
     searchResultParent = e.target.parentElement.parentElement.parentElement;
   } else {
-    console.error('failed to find search-result from click');
+    console.log('not a search-result from click');
   }  
   // Get the ID
   if(searchResultParent) {
-    let clickedId = searchResultParent.querySelector('.channel-id').innerText;
+    clickedId = searchResultParent.querySelector('.channel-id').innerText;
     console.log(clickedId);
   } 
   
