@@ -40,7 +40,7 @@ function searchChannel(search) {
           channelOutput += `
             <div class="row mb-2 ml-sm-3">
               <div class="col-3">
-                <img src="${channelThumbnail}" class="mx-auto d-block img-fluid search-thumbnails">
+                <img src="${channelThumbnail}" class="mx-auto d-block img-fluid img-thumbnail">
               </div>
               <div class="col-9 pl-0 pl-sm-1">
                 <div>${channelTitle}</div>                
