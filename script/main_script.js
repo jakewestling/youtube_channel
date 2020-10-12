@@ -111,7 +111,7 @@ function getChannel(channel) {
       const channel = response.result.items[0];
 
       const output = `
-      <h4 class="text-center mb-1">${channel.snippet.title}</div>     
+      <h4 class="text-center mb-1">${channel.snippet.title}</h4>     
       <div class="row justify-content-center">
         <div class="col-auto">        
           <table class="table table-responsive data-table">
