@@ -109,7 +109,12 @@ function getChannel(channel) {
     .then(response => {
       console.log(response);
       const channel = response.result.items[0];
-
+      let channelDescription;
+      if(channel.snippet.description) {
+        channelDescription = channel.snippet.description;
+      } else {
+        channelDescription = 'No description';
+      }
       const output = `
       <h4 class="text-center">${channel.snippet.title}</h4>     
       <div class="row justify-content-center">
@@ -141,7 +146,7 @@ function getChannel(channel) {
         </div>
       </div>
       <h4 class="text-center mb-1">Description</h4>
-        <div class="mx-auto text-center">${channel.snippet.description}</div>
+        <div class="mx-auto text-center">${channelDescription}</div>
         <div class="mt-3 text-center">
           <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/channel/${channel.id}">Visit Channel</a>
         </div>
@@ -176,7 +181,7 @@ function requestVideoPlaylist(playlistId) {
   request.execute(response => {
     console.log(response);
     const playListItems = response.result.items;
-    if (playListItems) {
+    if (playListItems.length) {
       let output = '<h4 class="text-center">Latest Videos</h4>';
       // Loop through videos and append output
       playListItems.forEach(item => {
