@@ -30,7 +30,6 @@ function searchChannel(search) {
       console.log(response);
       const channelItems = response.result.items;
       if (channelItems.length) {
-        // Activate listener
         activateListener();
         //Show them
         let channelOutput = '<h4 class="text-center">Results</h4>';
@@ -53,19 +52,31 @@ function searchChannel(search) {
         })
         searchResults.innerHTML = channelOutput;
       } else {
+        deactivateListener();
         searchResults.innerHTML = '<div>No results found. Try Again.</div>';
       }
     })
 }
 
 function activateListener() {
-  //Get clicked on ID
-document.querySelector('#search-results').addEventListener('click', getClickedID);
+  searchResults.addEventListener('click', getClickedID);
 }
+function deactivateListener() {
+  searchResults.removeEventListener('click', getClickedID);
+}
+
 
 function getClickedID(e) {
   console.log(e.target);
-  // if(e.target.classList.contains('search-result')){
-  //   console.log(e.target.innerText);
-  // }
+  let searchResultParent;
+  if(e.target.classList.contains('search-result')){
+    searchResultParent = e.target;
+  } else if(e.target.parentElement.classList.contains('search-result')){
+    searchResultParent = e.target.parentElement;
+  } else if(e.target.parentElement.parentElement.classList.contains('search-result')){
+    searchResultParent = e.target.parentElement.parentElement;
+  } else {
+    console.log('failure');
+  }  
+  console.log(searchResultParent.innerText);
 }
