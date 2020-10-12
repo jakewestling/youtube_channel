@@ -49,7 +49,7 @@ function searchChannel(search) {
               <div class="col-9 pl-0">
                 <div>${channelTitle}</div>
                 <div class="truncate-overflow">
-                  <p>${channelDescription}</p>
+                  ${channelDescription}
                 </div>
                 <div>ID: ${channelId}</div>
               </div>
