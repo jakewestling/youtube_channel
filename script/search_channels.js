@@ -18,7 +18,7 @@ function searchChannel(search) {
   gapi.client.youtube.search
     .list({
       "part": [
-        "snippet,statistics"
+        "snippet"
       ],
       "q": `${search}`,
       "type": [
