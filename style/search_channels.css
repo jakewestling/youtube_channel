@@ -2,16 +2,21 @@
   display: none;
 }
 
-#search-results {
-  font-size: 12px;
-}
 
 
 
 
 /* Screen less than (xs-default) ALL PHONES PORTRAIT*/
 @media screen and (min-width: 0px) {
-  /*Default Bootstrap*/
+  #search-results {
+    font-size: 12px;
+  }  
+}
+/* Extra for small phones*/
+@media screen and (min-width: 360px) {
+  #search-results {
+    font-size: 14px;
+  }
 }
 /* Screen greater than (sm) SMALL TABLETS*/
 @media screen and (min-width: 576px) {
