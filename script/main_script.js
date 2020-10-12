@@ -181,7 +181,7 @@ function requestVideoPlaylist(playlistId) {
       playListItems.forEach(item => {
         const videoId = item.snippet.resourceId.videoId;
         output += `
-          <div class="col-12 mb-1">
+          <div class="col-12 mb-2 mb-sm-3">
             <div class="video-container px-0">
               <iframe class="video" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
