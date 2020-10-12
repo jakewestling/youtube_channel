@@ -200,7 +200,7 @@ function requestVideoPlaylist(playlistId) {
     } else {
       videoContainer.innerHTML = `
       <h4 class="text-center">Latest Videos</h4>
-      <div class="col-12 mb-2 mb-sm-3">
+      <div class="col-12 text-center">
         No uploaded videos  
       </div>
       `;
