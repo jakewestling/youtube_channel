@@ -60,7 +60,8 @@ function searchChannel(search) {
 document.querySelector('body').addEventListener('click', getClickedID);
 
 function getClickedID(e) {
-  if(e.target.className.contains('search-result')){
+  console.log(e.target);
+  if(e.target.parentElement.className.contains('search-result')){
     console.log(e.target.innerText);
   }
 }
