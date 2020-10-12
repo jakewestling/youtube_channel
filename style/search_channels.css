@@ -9,7 +9,7 @@
 
 
 html {
-  --lh: 1.4rem;
+  --lh: 1rem;
   line-height: var(--lh);
 }
 
