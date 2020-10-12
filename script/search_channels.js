@@ -36,10 +36,6 @@ function searchChannel(search) {
           const channelThumbnail = item.snippet.thumbnails.high.url;
           const channelTitle = item.snippet.title;
           const channelId = item.snippet.channelId;
-          let channelDescription = item.snippet.description;
-          if (!channelDescription) {
-            channelDescription = "No description";
-          }
 
           channelOutput += `
             <div class="row mb-2">
@@ -47,10 +43,7 @@ function searchChannel(search) {
                 <img src="${channelThumbnail}" class="mx-auto d-block img-fluid search-thumbnails">
               </div>
               <div class="col-9 pl-0">
-                <div>${channelTitle}</div>
-                <div class="truncate-overflow">
-                  ${channelDescription}
-                </div>
+                <div>${channelTitle}</div>                
                 <div>ID: ${channelId}</div>
               </div>
             </div>          
