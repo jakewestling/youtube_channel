@@ -142,7 +142,7 @@ function getChannel(channel) {
       <h4 class="text-center mb-1">Description</h4>
         <div class="mx-auto text-center">${channel.snippet.description}</div>
         <div class="mt-3 text-center">
-          <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/${channel.snippet.customUrl}">Visit Channel</a>
+          <a class="btn bg-red text-white btn-font border border-dark" target="_blank" href="https://youtube.com/channel/${channel.id}">Visit Channel</a>
         </div>
       `;
       showChannelData(output);
