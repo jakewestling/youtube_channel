@@ -9,7 +9,7 @@
 /* Screen less than (xs-default) ALL PHONES PORTRAIT*/
 @media screen and (min-width: 0px) {
   #search-results {
-    font-size: 12px;
+    font-size: 13px;
   }  
 }
 /* Extra for small phones*/
