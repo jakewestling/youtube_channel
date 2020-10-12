@@ -6,7 +6,9 @@
   width: 250px;
 }
 
-
+.search-result {
+  cursor: pointer;
+}
 
 
 /* Screen less than (xs-default) ALL PHONES PORTRAIT*/

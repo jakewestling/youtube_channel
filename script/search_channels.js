@@ -38,7 +38,7 @@ function searchChannel(search) {
           const channelId = item.snippet.channelId;
 
           channelOutput += `
-            <div class="row mb-2 ml-sm-3">
+            <div class="row mb-2 ml-sm-3 search-result">
               <div class="col-3">
                 <img src="${channelThumbnail}" class="mx-auto d-block img-fluid img-thumbnail">
               </div>
@@ -54,4 +54,13 @@ function searchChannel(search) {
         searchResults.innerHTML = '<div>No results found. Try Again.</div>';
       }
     })
+}
+
+//Get clicked on ID
+document.querySelector('body').addEventListener('click', getClickedID);
+
+function getClickedID(e) {
+  if(e.target.className === 'search-result'){
+    console.log(e.target.innerText);
+  }
 }
