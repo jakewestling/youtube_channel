@@ -21,12 +21,14 @@
 /* Screen greater than (sm) SMALL TABLETS*/
 @media screen and (min-width: 576px) {
   #search-results {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 /* Screen greater than (md) IPAD or TABLETS*/
 @media screen and (min-width: 768px) {
-  
+  #search-results {
+    font-size: 24px;
+  }
 }
 
 /* Screen greater than (lg) LAPTOPS or DESKTOPS*/

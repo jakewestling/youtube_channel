@@ -38,11 +38,11 @@ function searchChannel(search) {
           const channelId = item.snippet.channelId;
 
           channelOutput += `
-            <div class="row mb-2">
+            <div class="row mb-2 ml-sm-3">
               <div class="col-3">
                 <img src="${channelThumbnail}" class="mx-auto d-block img-fluid search-thumbnails">
               </div>
-              <div class="col-9 pl-0">
+              <div class="col-9 pl-0 pl-sm-1">
                 <div>${channelTitle}</div>                
                 <div>ID: ${channelId}</div>
               </div>
