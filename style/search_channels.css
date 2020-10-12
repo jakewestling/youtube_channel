@@ -2,6 +2,6 @@
   display: none;
 }
 
-.search-thumbnails {
-  /* max-width: 150px; */
+#search-results {
+  font-size: 12px;
 }
