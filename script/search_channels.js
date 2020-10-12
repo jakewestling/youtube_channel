@@ -30,6 +30,8 @@ function searchChannel(search) {
       console.log(response);
       const channelItems = response.result.items;
       if (channelItems.length) {
+        // Activate listener
+        activateListener();
         //Show them
         let channelOutput = '<h4 class="text-center">Results</h4>';
         channelItems.forEach(item => {
@@ -56,11 +58,14 @@ function searchChannel(search) {
     })
 }
 
-//Get clicked on ID
-document.querySelector('.search-result').addEventListener('click', getClickedID);
+function activateListener() {
+  //Get clicked on ID
+document.querySelector('#search-results').addEventListener('click', getClickedID);
+}
 
 function getClickedID(e) {
-  if(e.target.classList.contains('search-result')){
-    console.log(e.target.innerText);
-  }
+  console.log(e.target);
+  // if(e.target.classList.contains('search-result')){
+  //   console.log(e.target.innerText);
+  // }
 }
