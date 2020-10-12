@@ -70,21 +70,21 @@ function getClickedID2(e) {
   console.log('search result');
 }
 
-function getClickedID(e) {
-  //select the search-result that was clicked
-  let searchResultParent;
-  if(e.target.classList.contains('search-result')){
-    searchResultParent = e.target;
-  } else if(e.target.parentElement.classList.contains('search-result')){
-    searchResultParent = e.target.parentElement;
-  } else if(e.target.parentElement.parentElement.classList.contains('search-result')){
-    searchResultParent = e.target.parentElement.parentElement;
-  } else if(e.target.parentElement.parentElement.parentElement.classList.contains('search-result')){
-    searchResultParent = e.target.parentElement.parentElement.parentElement;
-  } else {
-    console.error('failed to find search-result from click');
-  }  
-  // Get the ID
-  let clickedId = searchResultParent.querySelector('.channel-id').innerText;
-  console.log(clickedId);
-}
+// function getClickedID(e) {
+//   //select the search-result that was clicked
+//   let searchResultParent;
+//   if(e.target.classList.contains('search-result')){
+//     searchResultParent = e.target;
+//   } else if(e.target.parentElement.classList.contains('search-result')){
+//     searchResultParent = e.target.parentElement;
+//   } else if(e.target.parentElement.parentElement.classList.contains('search-result')){
+//     searchResultParent = e.target.parentElement.parentElement;
+//   } else if(e.target.parentElement.parentElement.parentElement.classList.contains('search-result')){
+//     searchResultParent = e.target.parentElement.parentElement.parentElement;
+//   } else {
+//     console.error('failed to find search-result from click');
+//   }  
+//   // Get the ID
+//   let clickedId = searchResultParent.querySelector('.channel-id').innerText;
+//   console.log(clickedId);
+// }
