@@ -59,14 +59,19 @@ function searchChannel(search) {
 }
 
 function activateListener() {
-  searchResults.addEventListener('click', getClickedID);
+  // searchResults.addEventListener('click', getClickedID);
+  searchResults.querySelector('.search-result').addEventListener('click', getClickedID2)
 }
 function deactivateListener() {
   searchResults.removeEventListener('click', getClickedID);
 }
 
+function getClickedID2(e) {
+  console.log('search result');
+}
 
 function getClickedID(e) {
+  //select the search-result that was clicked
   let searchResultParent;
   if(e.target.classList.contains('search-result')){
     searchResultParent = e.target;
