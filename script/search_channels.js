@@ -30,7 +30,7 @@ function searchChannel(search) {
       console.log(response);
       const channelItems = response.result.items;
       if (channelItems.length) {
-        activateListener();
+        
         //Show them
         let channelOutput = '<h4 class="text-center">Results</h4>';
         channelItems.forEach(item => {
@@ -51,6 +51,7 @@ function searchChannel(search) {
           `;
         })
         searchResults.innerHTML = channelOutput;
+        activateListener();
       } else {
         deactivateListener();
         searchResults.innerHTML = '<div>No results found. Try Again.</div>';
@@ -60,7 +61,7 @@ function searchChannel(search) {
 
 function activateListener() {
   // searchResults.addEventListener('click', getClickedID);
-  searchResults.querySelector('.search-result').addEventListener('click', getClickedID2)
+  searchResults.querySelector('.search-result').addEventListener('click', getClickedID2);
 }
 function deactivateListener() {
   searchResults.removeEventListener('click', getClickedID);
