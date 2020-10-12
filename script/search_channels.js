@@ -81,10 +81,16 @@ function getClickedID(e) {
   } else {
     console.log('not a search-result from click');
   }  
-  // Get the ID
+  // Get the ID (& make sure valid click)
   if(searchResultParent) {
     clickedId = searchResultParent.querySelector('.channel-id').innerText;
     console.log(clickedId);
+    // Open by id page
+    displayByID();
+    // Set form value as the ID
+    channelInput.value = clickedId;
+    // Get the channel data info
+    getChannel(clickedId);
   } 
   
 }
