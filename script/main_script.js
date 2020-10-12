@@ -198,7 +198,12 @@ function requestVideoPlaylist(playlistId) {
       // Output videos
       videoContainer.innerHTML = output;
     } else {
-      videoContainer.innerHTML = 'No Uploaded Videos';
+      videoContainer.innerHTML = `
+      <h4 class="text-center">Latest Videos</h4>
+      <div class="col-12 mb-2 mb-sm-3">
+        No uploaded videos  
+      </div>
+      `;
     }
   });
 }
