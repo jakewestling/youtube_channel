@@ -82,6 +82,9 @@ function getClickedID(e) {
     console.error('failed to find search-result from click');
   }  
   // Get the ID
-  let clickedId = searchResultParent.querySelector('.channel-id').innerText;
-  console.log(clickedId);
+  if(searchResultParent) {
+    let clickedId = searchResultParent.querySelector('.channel-id').innerText;
+    console.log(clickedId);
+  } 
+  
 }
