@@ -45,7 +45,7 @@ function searchChannel(search) {
               </div>
               <div class="col-9 pl-0 pl-sm-1">
                 <div>${channelTitle}</div>                
-                <div>ID: ${channelId}</div>
+                <div>ID: <span class="channel-id">${channelId}</span></div>
               </div>
             </div>          
           `;
@@ -67,7 +67,6 @@ function deactivateListener() {
 
 
 function getClickedID(e) {
-  console.log(e.target);
   let searchResultParent;
   if(e.target.classList.contains('search-result')){
     searchResultParent = e.target;
@@ -75,8 +74,12 @@ function getClickedID(e) {
     searchResultParent = e.target.parentElement;
   } else if(e.target.parentElement.parentElement.classList.contains('search-result')){
     searchResultParent = e.target.parentElement.parentElement;
+  } else if(e.target.parentElement.parentElement.parentElement.classList.contains('search-result')){
+    searchResultParent = e.target.parentElement.parentElement.parentElement;
   } else {
-    console.log('failure');
+    console.error('failed to find search-result from click');
   }  
-  console.log(searchResultParent.innerText);
+  // Get the ID
+  let clickedId = searchResultParent.querySelector('.channel-id');
+  console.log(clickedId);
 }
