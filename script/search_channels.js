@@ -57,7 +57,7 @@ function searchChannel(search) {
 }
 
 //Get clicked on ID
-document.querySelector('body').addEventListener('click', getClickedID);
+document.querySelectorAll('.search-result').addEventListener('click', getClickedID);
 
 function getClickedID(e) {
   if(e.target.classList.contains('search-result')){
