@@ -36,6 +36,11 @@ function searchChannel(search) {
           const channelThumbnail = item.snippet.thumbnails.high.url;
           const channelTitle = item.snippet.title;
           const channelId = item.snippet.channelId;
+          let channelDescription = item.snippet.description;
+          if (!channelDescription) {
+            channelDescription = "No description";
+          }
+
           channelOutput += `
             <div class="row mb-2">
               <div class="col-3">
@@ -43,6 +48,9 @@ function searchChannel(search) {
               </div>
               <div class="col-9 pl-0">
                 <div>${channelTitle}</div>
+                <div class="truncate-overflow">
+                  <p>${channelDescription}</p>
+                </div>
                 <div>ID: ${channelId}</div>
               </div>
             </div>          
