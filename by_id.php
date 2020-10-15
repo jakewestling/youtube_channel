@@ -1,12 +1,13 @@
 <div class="row bg-light-gray" id="by-id">
   <div class="col-12">
-  <!-- Log In Button -->
+    <!-- Log In Button -->
     <div id="by-id-login" class="user-login text-center">
       <div>Please log in with Google to use this feature!</div>
       <div class="pt-2 pb-1">Log In With Google</div>
       <button id="by-id-login-button" class="btn bg-red text-white btn-font border border-dark">LOG IN</button>
     </div>
-  </div>
+  </div> <!-- END col-12 -->
+
   <div id="content" class="mt-1">
     <div class="col-12 d-block text-center">
 
@@ -39,4 +40,5 @@
     <div id="channel-thumbnail" class="col-12 mt-3"></div>
     <div id="channel-data" class="col-12 mt-3"></div>
     <div id="video-container" class="col-12 mt-3"></div>
-  </div>
+  </div> <!-- END content -->
+</div> <!-- END by-id -->
