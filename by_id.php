@@ -22,12 +22,9 @@
             </div>
             <div class="modal-body">
               A channel ID is a set of characters assigned to distinguish individual channels. For example, one ID is UClePynY267S97vwsxfbF5hg.<br><br>
-              Users: Please use the <a onclick="displaySearchChannels()" data-dismiss="modal">Search Channels</a> feature. You can find channel data by searching for the channel name instead.<br><br>
-              Developers: If you already know the ID, you can find data by entering it here.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+              Users:  Please use the <a href="" onclick="displaySearchChannels()" data-dismiss="modal">Search Channels</a> feature. You can find channel data by searching for the channel name instead.<br><br>
+              Developers:  If you already know the ID, you can find data by entering it here.
+            </div>            
           </div>
         </div>
       </div>
