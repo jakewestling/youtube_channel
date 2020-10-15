@@ -10,7 +10,7 @@
   background-color: var(--bg-silver);
 }
 .text-red {
-  color: var(--text-red);
+  color: var(--text-red) !important;
 }
 .bg-light-gray {
   background-color: var(--bg-light-gray);
