@@ -11,7 +11,7 @@
       require 'search_channels.php';
       require 'by_id.php';
       require 'compare.php';
-      require 'guide.php'
+      require 'guide.php';
     ?>   
   </div>
   
