@@ -11,23 +11,22 @@
     <div class="col-12 d-block text-center">
 
       <!-- Modal for Question Mark -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="by-id-question" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">What is YouTube Channel ID?</h5>
+              <h5 class="modal-title" id="exampleModalLabel">What is a YouTube Channel ID?</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               A channel ID is a set of characters assigned to distinguish individual channels. For example, one ID is UClePynY267S97vwsxfbF5hg.<br><br>
-              Users: Please use the Search Channels feature. You can find channel data by searching for the channel name instead.<br><br>
+              Users: Please use the <a onclick="displaySearchChannels()">Search Channels</a> feature. You can find channel data by searching for the channel name instead.<br><br>
               Developers: If you already know the ID, you can find data by entering it here.
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -35,7 +34,7 @@
 
       <form id="channel-form" class="text-center">
         <div class="input-field">
-          <input class="mr-2" type="text" placeholder="Enter Channel ID..." id="channel-input"><span class="question-help" data-toggle="modal" data-target="#exampleModal"><i class="fa-lg fas fa-question-circle"></i></span><br>
+          <input class="mr-2" type="text" placeholder="Enter Channel ID..." id="channel-input"><span class="question-help" data-toggle="modal" data-target="#by-id-question"><i class="fa-lg fas fa-question-circle"></i></span><br>
           <input type="submit" value="Get Channel Info!" class="btn bg-red text-white btn-font border border-dark mt-1 px-4">
         </div>
       </form>
