@@ -9,21 +9,21 @@
   </div>
   <div id="search-content" class="mt-1">
   <!-- Modal for Question Mark -->
-      <div class="modal fade" id="search-question" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="searchModalLabel">Search for YouTube Channels</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Please type in the name of the channel you wish to find and press search. The most relevant results are displayed first. Click on a result to see the data and information about it.
-            </div>            
+    <div class="modal fade" id="search-question" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="searchModalLabel">Search for YouTube Channels</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
+          <div class="modal-body">
+            Please type in the name of the channel you wish to find and press search. The most relevant results are displayed first. Click on a result to see the data and information about it.
+          </div>            
         </div>
       </div>
+    </div>
 
     <!-- Form -->
     <div class="col-12 d-block text-center">

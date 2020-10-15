@@ -57,4 +57,5 @@ function displayGuide() {
   isActiveLink(link4);
   hideAllPages();
   guide.style.display = 'block';
+  console.log(guide.style.display);
 }
