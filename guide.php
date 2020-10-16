@@ -5,7 +5,7 @@
 
     <h3 "mb-1">Getting Started</h3>
     <h4>1. Login with Google</h4>
-    <p>(This is required to use YouTube's database.) Click on the user icon at the top right to login. Alternatively, navigate to the <a href="" class="text-red" onclick="displaySearchChannels()"><i class="fas fa-search"></i> Channels</a> or <a href="" class="text-red" onclick="displayByID()">By ID</a> page and click login. You need to accept permissions so that YouTube knows who is searching through their database. You may need to click advanced the first time to accept app permissions from Alpha & Data.</p>
+    <p>(This is required to use YouTube's database.) Click on the user icon at the top right to login. Alternatively, navigate to the <a href="" class="text-red" onclick="displaySearchChannels();e.preventDefault();"><i class="fas fa-search"></i> Channels</a> or <a href="" class="text-red" onclick="displayByID();e.preventDefault();">By ID</a> page and click login. You need to accept permissions so that YouTube knows who is searching through their database. You may need to click advanced the first time to accept app permissions from Alpha & Data.</p>
 
     <h4>2a. Search for Channels</h4>
     <p>Click the <i class="fas fa-search"></i> Channels in the navigation bar. Type in the channel name you wish to find and press search. Results display by relevance. Click a result to view the channel info.</p>
