@@ -1,6 +1,6 @@
 <div class="row text-center mt-1" id="guide">  
   <div class="col-12">
-    <h4>How to Guide</h4>
+    <h3>How to Guide</h3>
     <p>YouTube Channel Info is used to find and display publicly available channel data and information.</p>
 
     <h4>Getting Started</h4>
