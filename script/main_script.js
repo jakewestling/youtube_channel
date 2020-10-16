@@ -16,7 +16,6 @@ const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
-// const defaultChannelID = 'UC29ju8bIPH5as8OGnQzwJyA'; (Traversy)
 const defaultChannelID = 'UClePynY267S97vwsxfbF5hg'; //EngineersEscape
 
 // Form submit and change channel

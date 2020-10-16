@@ -3,18 +3,18 @@
 #### [View this project and others on Alpha & Data](https://alphaanddata.com/)
 
 ## Description:
-Project Description Here
+YouTube Channel Info is used to find and display channel information. Secure google login allows you to access publicly available data. Your favorite channels are available using our Search Channels or By ID modules. Subscribers, views, videos, and more are all available through YouTube Channel Info.
 
-Paragraph 2
+This application makes use of Google's YouTube Data API v3. Google OAuth2 is used for the login/logout system.
 
 ## Key Technologies:
 
-### HTML
-* Item 1
-* Item 2
-* Item 3
+### Google's YouTube Data API v3
 
-### CSS
-* Item 1
-* Item 2
-* Item 3
+### Google OAuth
+
+### JavaScript
+
+### Bootstrap
+
+
