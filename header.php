@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style/navbar.css"> 
   <link rel="stylesheet" href="style/search_channels.css"> 
   <link rel="stylesheet" href="style/by_id.css"> 
+  <link rel="stylesheet" href="style/guide.css"> 
   <script src="https://kit.fontawesome.com/6b0b6e5fa1.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light-gray">
